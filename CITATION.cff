@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite this research companion and the original thesis when using this work."
+type: software
+title: "Commodity quantile regression: a CAC40 and S&P GSCI thesis companion"
+authors:
+  - family-names: Attias
+    given-names: David
+version: 0.1.0
+abstract: "A companion to the 2025 ESCP master's thesis on French equity portfolio diversification with GSCI, consolidating historical notebook analysis and corrected return timing."

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commodity-quantile-regression"
+version = "0.1.0"
+description = "CAC40 and S&P GSCI: a master's thesis reproducibility companion"
+requires-python = ">=3.11"
+authors = [{name = "David Attias"}]
+dependencies = ["numpy>=1.26", "pandas>=2.2", "scipy>=1.12", "statsmodels>=0.14", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "nbformat>=5", "nbclient>=0.10", "ipykernel>=6", "jupyterlab>=4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
